@@ -10,24 +10,23 @@ export default function About() {
     >
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          {/* LEFT CONTENT – PROFILE */}
+          {/* LEFT CONTENT – TEXT */}
           <motion.div
             variants={fadeLeft}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-center md:text-left space-y-6 order-1"
+            className="text-center md:text-left space-y-6 order-2 md:order-1"
           >
             <div>
               <span className="text-[#473472] font-semibold text-sm uppercase tracking-wide overline decoration-cyan-500 decoration-2 decoration-double">
                 About Us
               </span>
-
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-3 mb-6">
                 Your Trusted Partner for Aluminum Solutions
               </h2>
 
-              {/* Gambar Khusus Mobile (Hanya muncul di HP, di bawah judul) */}
+              {/* Gambar Khusus Mobile (Muncul di bawah judul saat layar kecil) */}
               <div className="block md:hidden my-8">
                 <img
                   src={aboutus}
@@ -51,21 +50,22 @@ export default function About() {
             </div>
           </motion.div>
 
-          {/* RIGHT CONTENT – IMAGE (Hanya muncul di Desktop) */}
+          {/* RIGHT CONTENT – IMAGE (Desktop) */}
           <motion.div
             variants={fadeUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="hidden md:block order-2"
+            className="hidden md:block order-1 md:order-2"
           >
-            <div className="relative mb-6 md:mb-12">
+            <div className="relative">
               <img
                 src={aboutus}
                 alt="Team Aluminium"
-                className="rounded-2xl shadow-2xl w-full h-auto object-cover"
+                className="relative z-10 rounded-2xl shadow-2xl w-full h-auto object-cover"
               />
-              <div className="absolute -bottom-6 -right-6 w-48 h-48 rounded-2xl -z-10 bg-slate-100"></div>
+              {/* Background Accent Decor */}
+              <div className="absolute -bottom-6 -right-6 w-48 h-48 rounded-2xl bg-slate-100 z-0"></div>
             </div>
           </motion.div>
         </div>

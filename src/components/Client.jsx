@@ -32,7 +32,6 @@ export default function Partners() {
           Our Client
         </span>
       </div>
-
       {/* Marquee Container */}
       <div className="relative w-full overflow-hidden">
         <div
