@@ -45,13 +45,12 @@ export default function ProjectOverview() {
           </div>
 
           <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mt-3 mb-6 tracking-tight">
-            Why Choose Us?
+            High-Level Strategy
           </h2>
 
           <p className="text-gray-600 text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
-            Lebih dari sekadar pemasok, kami adalah mitra strategis yang
-            memastikan setiap tahap transformasi material Anda berjalan dengan
-            kesempurnaan operasional.
+            Your strategic partner in material transformation, ensuring
+            operational excellence and superior outcomes at every step
           </p>
         </div>
 

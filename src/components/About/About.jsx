@@ -20,7 +20,7 @@ export default function About() {
           >
             <div>
               <span className="text-[#473472] font-semibold text-sm uppercase tracking-wide overline decoration-cyan-500 decoration-2 decoration-double">
-                About Us.
+                About Us
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-3 mb-6">
                 Your Trusted Partner for Aluminum Solutions
